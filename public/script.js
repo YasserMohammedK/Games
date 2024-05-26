@@ -2,8 +2,8 @@ const gameList = document.querySelector(".gameList"); // Select the container fo
 const loadMoreGamesBtn = document.querySelector(".main-button"); // Select the button to load more games
 let nextGameListUrl = null; // Initialize variable to store URL for loading more games
 let defaultUrl = null; // Initialize variable to store the default URL
-import { APIKey } from './prod.env.js'; // Import API key from prod.env.js
 
+const APIKey = "";
 // Define the default URL with the API key and date parameters
 defaultUrl = `http://localhost:3000/api/games?key=${APIKey}&dates=2022-01-01,2022-12-31&ordering=-added`;
 
